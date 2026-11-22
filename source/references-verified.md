@@ -64,3 +64,45 @@ If the paper mentions BDNF at all, it should also say that blood BDNF is a poor 
 - For fairness, the counterpoint is Klein, A. B., et al. (2011), "Blood BDNF concentrations reflect brain-tissue BDNF levels across species." *International Journal of Neuropsychopharmacology*, 14(3), 347–353. https://doi.org/10.1017/S1461145710000738. That study used rats and pigs, not humans.
 
 The simpler course is the one the revision plan recommends: leave molecular claims out entirely.
+
+## Added for the two outlines (checked 2026-11-22, Crossref and OpenAlex)
+
+**Mutation testing and the coupling effect**
+- DeMillo, R. A., Lipton, R. J., & Sayward, F. G. (1978). Hints on test data selection: Help for the practicing programmer. *Computer*, 11(4), 34–41. https://doi.org/10.1109/C-M.1978.218136
+- Offutt, A. J. (1992). Investigations of the software testing coupling effect. *ACM TOSEM*, 1(1), 5–20. https://doi.org/10.1145/125489.125473
+- Just, R., Jalali, D., Inozemtseva, L., Ernst, M. D., Holmes, R., & Fraser, G. (2014). Are mutants a valid substitute for real faults in software testing? *FSE 2014*, 654–665. https://doi.org/10.1145/2635868.2635929
+
+**Model cards and datasheets**
+- Mitchell, M., et al. (2019). Model cards for model reporting. *FAT\* 2019*, 220–229. https://doi.org/10.1145/3287560.3287596
+- Gebru, T., et al. (2021). Datasheets for datasets. *Communications of the ACM*, 64(12), 86–92. https://doi.org/10.1145/3458723
+
+**Autograders**
+- Singh, A., Karayev, S., Gutowski, K., & Abbeel, P. (2017). Gradescope: A fast, flexible, and fair system for scalable assessment of handwritten work. *L@S 2017*, 81–88. https://doi.org/10.1145/3051457.3051466
+- Edwards, S. H., & Pérez-Quiñones, M. A. (2008). Web-CAT: Automatically grading programming assignments. *ITiCSE 2008*, 328 (one-page item). https://doi.org/10.1145/1384271.1384371
+
+**Mining student version-control histories**
+- Mierle, K., Laven, K., Roweis, S., & Wilson, G. (2005). Mining student CVS repositories for performance indicators. *MSR 2005*, 1–5. https://doi.org/10.1145/1083142.1083150
+- Edwards, S. H., Snyder, J., Pérez-Quiñones, M. A., Allevato, A., Kim, D., & Tretola, B. (2009). Comparing effective and ineffective behaviors of student programmers. *ICER 2009*, 3–14. https://doi.org/10.1145/1584322.1584325
+- Spacco, J., et al. (2015). Analyzing student work patterns using programming exercise data. *SIGCSE 2015*, 18–23. https://doi.org/10.1145/2676723.2677297
+- Leinonen, J., Longi, K., Klami, A., & Vihavainen, A. (2016). Automatic inference of programming performance and experience from typing patterns. *SIGCSE 2016*, 132–137. https://doi.org/10.1145/2839509.2844612
+- Glassey, R. (2019). Adopting Git/GitHub within teaching: A survey of tool support. *CompEd 2019*, 143–149. https://doi.org/10.1145/3300115.3309518
+- Karakaš and Helić (2024). *ITiCSE 2024*, 108–114. https://doi.org/10.1145/3649217.3653561
+- Pons, Bruel, Raclet and Silvestre (2023). Finding behavioral indicators from contextualized commits in software engineering courses with process mining. LNCS, 56–68. https://doi.org/10.1007/978-3-031-48639-5_5
+- Song, Leinonen and Giacaman (2026). Visualizing insights in group project-based software courses through Git data. *SIGCSE Virtual 2026*, 455–461. https://doi.org/10.1145/3795867.3831037
+- Gedeon and Giacaman (2026). LLM-driven feature inference for analyzing student Git collaboration. *IEEE Access*, 14, 61117–61130. https://doi.org/10.1109/ACCESS.2026.3685720
+
+**Detecting LLM-generated code in student work**
+- Hoq et al. (2024). *SIGCSE 2024*, 526–532. https://doi.org/10.1145/3626252.3630826
+- Pan et al. (2024). Assessing AI detectors in identifying AI-generated code: Implications for education. *ICSE-SEET 2024*, 1–11. https://doi.org/10.1145/3639474.3640068
+- Ye et al. (2026). *Koli Calling '26*, 1–12. https://doi.org/10.1145/3856208.3856226
+- Karnalim et al. (2026). *Discover Computing*, 29(1). https://doi.org/10.1007/s10791-025-09884-9
+
+**LLM non-determinism and LLM-as-judge reliability**
+- Ouyang, S., Zhang, J. M., Harman, M., & Wang, M. (2025). An empirical study of the non-determinism of ChatGPT in code generation. *ACM TOSEM*, 34(2), 1–28. https://doi.org/10.1145/3697010
+- Wang, P., et al. (2024). Large language models are not fair evaluators. *ACL 2024*, 9440–9450. https://doi.org/10.18653/v1/2024.acl-long.511
+- Jukiewicz, M. (2024). *Thinking Skills and Creativity*, 52, 101522. https://doi.org/10.1016/j.tsc.2024.101522
+- Zheng, L., et al. (2023). Judging LLM-as-a-judge with MT-Bench and Chatbot Arena. *NeurIPS 36*, 46595–46623.
+
+**Bjork and Bjork (1992)**, confirmed: in Healy, Kosslyn and Shiffrin (Eds.), *From Learning Processes to Cognitive Processes: Essays in Honor of William K. Estes* (Vol. 2, pp. 35–67). Hillsdale, NJ: Erlbaum. No DOI. One secondary source gives pp. 35–68.
+
+Titles left out above (Karakaš and Helić 2024; Hoq et al. 2024; Ye et al. 2026; Karnalim et al. 2026; Jukiewicz 2024) were not captured in full during the check. Look them up by DOI before citing.

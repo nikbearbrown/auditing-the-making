@@ -54,7 +54,7 @@ Status key for evidence: **have** (exists now), **to collect** (Paper 1 must pro
 |---|---|---|
 | Generative AI weakens the inference from an artifact to the process that produced it. | The decoupling argument (preprint §1 to 2); studies showing output-only AI-text detectors are unreliable and biased (Weber-Wulff et al. 2023; Liang et al. 2023) | have |
 | Instructors need evidence of how work was made that they can weigh themselves; a verdict or score would take that judgment from them. | The design argument (preprint §5.3, "the instructor as meta-model"); the learning-analytics ethics literature (Slade and Prinsloo 2013) | have |
-| Existing tools check correctness (autograders) or document who produced text (writing-process capture), not how a project developed. | Related work: Gradescope, Web-CAT, Grammarly Authorship, Turnitin Clarity | to verify (§2) |
+| Existing tools check correctness (autograders) or document who produced text (writing-process capture), not how a project developed. | Related work: Gradescope, Web-CAT, Grammarly Authorship, Turnitin Clarity | have for autograders; product pages still to check |
 | Contributions: (1) the tool design; (2) a frozen-expectation synthetic benchmark, released; (3) an evaluation answering RQ1 to RQ5. | The paper itself | to collect |
 
 ### 2. Background and related work
@@ -64,11 +64,11 @@ Status key for evidence: **have** (exists now), **to collect** (Paper 1 must pro
 | Arguing from observed behavior to a claim about a learner is an evidence-centered design problem; Frictional supplies evidence and leaves the claim to the instructor. | Mislevy, Steinberg and Almond 2003 | have (verified) |
 | Process data have long been used to assess learners unobtrusively, and to detect students gaming a system. | Shute 2011; Baker et al. 2004; Corbett and Anderson 1994 or 1995 | have (verified) |
 | Keystroke and process logs can separate authentic from non-authentic writing in controlled settings. | Leijten and Van Waes 2013; Jiang et al. 2024; Deane et al. 2025; Crossley et al. 2024 | have (verified) |
-| Commit histories and submission timing have been mined in computing education for performance and behavior. | Mierle et al. 2005; Edwards et al. 2009; recent work (2023 to 2026) | to verify |
-| Autograders assess correctness, not process. | Gradescope (Singh et al. 2017); Web-CAT (Edwards and Pérez-Quiñones 2008) | to verify |
-| Model cards and datasheets document a model or dataset's intended use and limits; dimension cards apply this to audit dimensions. | Mitchell et al. 2019; Gebru et al. 2021 | to verify |
-| Seeded faults are a proxy for real faults whose validity rests on the coupling effect; the same caution applies to synthetic process patterns. | DeMillo, Lipton and Sayward 1978; Offutt 1992; Just et al. 2014 | to verify |
-| LLM judgments vary across runs and providers, so consistency must be measured, not assumed. | Literature on LLM-as-judge reliability | to verify |
+| Commit histories and submission timing have been mined in computing education for performance and behavior. | Mierle et al. 2005; Edwards et al. 2009; recent work (2023 to 2026) | have (verified 2026-11-22) |
+| Autograders assess correctness, not process. | Gradescope (Singh et al. 2017); Web-CAT (Edwards and Pérez-Quiñones 2008) | have (verified 2026-11-22) |
+| Model cards and datasheets document a model or dataset's intended use and limits; dimension cards apply this to audit dimensions. | Mitchell et al. 2019; Gebru et al. 2021 | have (verified 2026-11-22) |
+| Seeded faults are a proxy for real faults whose validity rests on the coupling effect; the same caution applies to synthetic process patterns. | DeMillo, Lipton and Sayward 1978; Offutt 1992; Just et al. 2014 | have (verified 2026-11-22) |
+| LLM judgments vary across runs and providers, so consistency must be measured, not assumed. | Ouyang et al. 2025; Wang et al. 2024; Jukiewicz 2024 | have (verified 2026-11-22) |
 
 ### 3. Frictional: design
 
@@ -82,7 +82,7 @@ Status key for evidence: **have** (exists now), **to collect** (Paper 1 must pro
 | Every report records the skill version and the model name and version. | Schema and report header | to collect |
 | Install-test failures include the agent's full transcript, so a documentation failure can be told apart from an agent-environment failure. | Benchmark cases A3 and A4; transcript attachment | to collect |
 | Frictional sends no data to Irreducibly Human; the user's agent processes the work. | Source code (no outbound calls other than the user-initiated clone); a network-isolated test run; the README notice | to collect |
-| Field profiles keyed by CIP code recommend which dimensions to show. | Versioned profile files; the CIP source and version | to collect; CIP edition to verify |
+| Field profiles keyed by CIP code recommend which dimensions to show. | Versioned profile files; the CIP source and version | to collect (CIP 2020 is current, checked 2026-11-22) |
 | Instructor feedback goes through a pre-filled link with enumerated values only; agents do not submit feedback. | The feedback form design; a test that the link contains only enumerated values | to collect |
 | The design reuses an existing two-view report pattern (people and agents) and the artifact review lenses of an existing project-review skill. | stem-project-review (`report.md` and `report.json`, schema, validate and render, rubric lenses). It is unpublished, so cite it as software with a commit or release. | have |
 
@@ -118,7 +118,7 @@ Status key for evidence: **have** (exists now), **to collect** (Paper 1 must pro
 | Claim | Evidence needed | Status |
 |---|---|---|
 | The aim is to make gaming visible, not to be ungameable. Some manufactured histories (C1) cannot be detected from git alone, only through evidence collected outside the student's control. | RQ3 results; the C1 design | to collect |
-| Synthetic detection does not guarantee real detection; as with the coupling effect in mutation testing, the link has to be tested on real faults, which is Paper 2's job. | Mutation-testing literature; Paper 2 design | to verify |
+| Synthetic detection does not guarantee real detection; as with the coupling effect in mutation testing, the link has to be tested on real faults, which is Paper 2's job. | Mutation-testing literature; Paper 2 design | have (verified 2026-11-22) |
 | Where model interpretations vary across runs, instructors should rely on script facts and treat interpretations as prompts for their own reading. | RQ4 results | to collect |
 
 ### 8. Threats to validity
@@ -203,19 +203,29 @@ Status: **verified** (checked against Crossref or the publisher on 2026-11-22), 
 | Output-only detectors | Weber-Wulff et al. (2023), *IJEI* 19, 26, doi:10.1007/s40979-023-00146-z; Liang et al. (2023), *Patterns* 4(7), 100779, doi:10.1016/j.patter.2023.100779 | §1 | verified |
 | Writing-process capture products | Grammarly Authorship; Turnitin Clarity (product pages) | §1, §2 | verified as product pages; feature claims need checking against current pages |
 | Learning analytics ethics | Slade and Prinsloo (2013), *American Behavioral Scientist* 57(10), 1510–1529, doi:10.1177/0002764213479366 | §1, §9 | verified |
-| Performance versus learning | Bjork and Bjork (1992), in Healy, Kosslyn and Shiffrin (Eds.), vol. 2, 35–67; Bjork and Bjork (2011), *Psychology and the Real World*, 56–64 | §1 | 2011 verified; 1992 verifying |
-| Commit-history mining | Mierle et al. (2005), MSR; Edwards et al. (2009), ICER; 2023–2026 work | §2 | verifying |
-| Autograders | Singh et al. (2017), Gradescope, L@S; Edwards and Pérez-Quiñones (2008), Web-CAT, ITiCSE | §2 | verifying |
-| Mutation testing and coupling | DeMillo, Lipton and Sayward (1978), *IEEE Computer*; Offutt (1992), *TOSEM*; Just et al. (2014), FSE | §2, §7 | verifying |
-| Model cards and datasheets | Mitchell et al. (2019), FAT*; Gebru et al. (2021), *CACM* | §3 | verifying |
-| LLM-as-judge variability | to be identified | §2, §7 | verifying |
+| Performance versus learning | Bjork and Bjork (1992), in Healy, Kosslyn and Shiffrin (Eds.), *From Learning Processes to Cognitive Processes* vol. 2, 35–67, Erlbaum; Bjork and Bjork (2011), *Psychology and the Real World*, 56–64 | §1 | verified (one secondary source gives 1992 pp. 35–68) |
+| Commit-history mining | Mierle, Laven, Roweis and Wilson (2005), MSR, 1–5, doi:10.1145/1083142.1083150; Edwards et al. (2009), ICER, 3–14, doi:10.1145/1584322.1584325; Spacco et al. (2015), SIGCSE, 18–23, doi:10.1145/2676723.2677297; Leinonen, Longi, Klami and Vihavainen (2016), SIGCSE, 132–137, doi:10.1145/2839509.2844612; Glassey (2019), CompEd, 143–149, doi:10.1145/3300115.3309518; Karakaš and Helić (2024), ITiCSE, 108–114, doi:10.1145/3649217.3653561; Pons et al. (2023), LNCS, 56–68, doi:10.1007/978-3-031-48639-5_5; Song, Leinonen and Giacaman (2026), SIGCSE Virtual, 455–461, doi:10.1145/3795867.3831037; Gedeon and Giacaman (2026), *IEEE Access* 14, doi:10.1109/ACCESS.2026.3685720 | §2 | verified |
+| Autograders | Singh, Karayev, Gutowski and Abbeel (2017), L@S, 81–88, doi:10.1145/3051457.3051466; Edwards and Pérez-Quiñones (2008), ITiCSE, 328 (one page), doi:10.1145/1384271.1384371 | §2 | verified |
+| Mutation testing and coupling | DeMillo, Lipton and Sayward (1978), *Computer* 11(4), 34–41, doi:10.1109/C-M.1978.218136; Offutt (1992), *TOSEM* 1(1), 5–20, doi:10.1145/125489.125473; Just et al. (2014), FSE, 654–665, doi:10.1145/2635868.2635929 | §2, §7 | verified |
+| Model cards and datasheets | Mitchell et al. (2019), FAT*, 220–229, doi:10.1145/3287560.3287596; Gebru et al. (2021), *CACM* 64(12), 86–92, doi:10.1145/3458723 | §3 | verified |
+| LLM non-determinism and LLM-as-judge reliability | Ouyang, Zhang, Harman and Wang (2025), *TOSEM* 34(2), doi:10.1145/3697010 (temperature 0 does not guarantee determinism); Wang et al. (2024), ACL, 9440–9450, doi:10.18653/v1/2024.acl-long.511 (position bias); Jukiewicz (2024), *Thinking Skills and Creativity* 52, 101522, doi:10.1016/j.tsc.2024.101522 (repeated LLM grading of programming assignments); Zheng et al. (2023), NeurIPS 36 | §2, §7 | verified |
+| Detecting LLM-generated code in student work | Hoq et al. (2024), SIGCSE, 526–532, doi:10.1145/3626252.3630826; Pan et al. (2024), ICSE-SEET, 1–11, doi:10.1145/3639474.3640068; Ye et al. (2026), Koli Calling '26, 1–12, doi:10.1145/3856208.3856226; Karnalim et al. (2026), *Discover Computing* 29(1), doi:10.1007/s10791-025-09884-9 | §2 (artifact-only detection, for contrast) | verified |
+| CIP codes | NCES Classification of Instructional Programs, CIP 2020, "the most recent version"; no CIP 2030 announced ([NCES](https://nces.ed.gov/ipeds/cipcode/)) | §3 (field profiles) | verified |
 
 ## Candidate venues
 
-*To be filled in from the venue and library-coverage check in progress; each entry will carry its date checked.* Already verified on 2026-11-22 (see `process-evidence-in-practice/README.md`):
-- SIGCSE TS 2027 had an "Experience Reports and Tools" track: 6 pages plus 1 page of references; abstracts June 26 and papers July 3, 2026. The 2028 dates are not announced.
-- ITiCSE 2027 (Glasgow, July 12 to 14): abstract January 11, paper January 18, 2027.
-- Koli Calling 2026: 10-page full papers, due July 12 (extended to July 19), 2026. 2027 is not announced.
+All checked on **2026-11-22**. Publication-fee constraint: only venues where Northeastern University Library fully covers the APC, or that charge authors nothing.
+
+**ACM coverage:** Northeastern University Library is listed as an ACM Open participant ([ACM Open participants](https://libraries.acm.org/acmopen/open-participants)). The library's open-access page (marked "Updated 11/17/2026") says ACM APCs are "fully covered" ([NU Library OA](https://library.northeastern.edu/resource_discovery/open-access-publishing/)). Under ACM Open, a corresponding author at a member institution, using the institutional email, pays nothing ([ACM Open FAQ](https://libraries.acm.org/acmopen/acmopen-faq)). **All four ACM candidates below therefore cost $0, provided the corresponding author is the Northeastern author using the northeastern.edu address.**
+
+| Venue | Fit for Paper 1 | Length and format | Review | Next deadline | Source |
+|---|---|---|---|---|---|
+| **SIGCSE TS 2028**, "Experience Reports and Tools" track (there is no separate Tools track) | Good: "accepts experience reports, teaching techniques, and pedagogical tools" | 2027: 6 pages body + 1 page references only; two-column ACM sigconf; not TAPS | Dual-anonymous | **Not announced.** 2027 was abstract June 26, paper July 3, 2026, so expect late June to early July 2027 (estimated) | [2027 CFP](https://sigcse-ts.acm.org/2027/files/SIGCSETS-2027-CFP.pdf); [SIGCSE symposia](https://sigcse.org/events/symposia/conferences.html) |
+| **ITiCSE 2027** (Glasgow, July 12 to 14, 2027), "Experience reports and tools" track | Good fit, but early | 6 pages + a 7th page for references only; acmart sigconf; not TAPS; one author must attend in person | Dual-anonymous | Abstract **January 11, 2027**; paper **January 18, 2027**; notification March 8 | [ITiCSE 2027](https://iticse.acm.org/2027) |
+| **Koli Calling 2027**, "System and tool papers" | Best category match: tool papers need "a certain degree of maturity" and empirical evaluation | 2026: up to 10 pages + references; acmart `sigconf,anonymous,review`; ACM ICPS proceedings | Three dual-anonymous reviews + meta-review | **Not announced.** 2026 was July 12 (metadata) and July 19, so expect mid-July 2027 (estimated) | [Koli 2026 call](https://www.kolicalling.fi/call-for-papers/); [submission guide](https://www.kolicalling.fi/submission-guide/) |
+| **ACM Transactions on Computing Education (TOCE)** | Possible as a **research article**, or as a **dataset** article for the benchmark. **Experience reports are desk-rejected.** | No page or word limit; most are 15 to 25 journal pages; ACM journal format; [Author Year] citations | Double-anonymous; monthly cut-off (next December 1, 2026) | Rolling. **Submissions since November 1, 2026 require review tokens, earned by reviewing for TOCE.** | [TOCE author guidelines](https://dl.acm.org/journal/toce/author-guidelines) |
+
+Not recommended: ITiCSE 2027's January 18 deadline gives eight weeks to build the skill, build and freeze the benchmark, and run about 1,500 audits, during the same weeks as the IRB application.
 
 ## Open decisions
 
@@ -223,7 +233,13 @@ Status: **verified** (checked against Crossref or the publisher on 2026-11-22), 
 2. **Which dimensions Paper 1 evaluates.** (a) Artifact dimensions, repository process dimensions, and process-log, error-trajectory and temporal-engagement (as specified); (b) repository process dimensions only, which is simpler and faster to build, but under-describes a tool that also reviews the artifact; (c) all, with Y₃ to Y₇ shown only as `no_evidence`. Tradeoff: scope against build time before Spring 2027.
 3. **Benchmark scale.** See [synthetic-benchmark-spec.md](synthetic-benchmark-spec.md), open decision 1.
 4. **Model providers.** Claude and Gemini, or add a third. Tradeoff: generality against cost (about 630 more runs per provider).
-5. **Venue and timing.** (a) ITiCSE 2027, January 18, 2027: requires the skill, benchmark and results in 8 weeks, which is not realistic with the IRB work also due. (b) SIGCSE TS 2028 Experience Reports and Tools, expected early July 2027: time for a full benchmark. (c) Koli Calling 2027, expected mid-July 2027: longer page limit. (d) ACM TOCE: no deadline, longer form, slower. Coverage of publication charges is still being verified.
+5. **Venue and timing.** All four ACM options cost $0 through ACM Open.
+   - (a) ITiCSE 2027, January 18, 2027: not realistic.
+   - (b) SIGCSE TS 2028 Experience Reports and Tools, expected early July 2027: 6 pages, so the benchmark has to be summarized tightly.
+   - (c) Koli Calling 2027 System and tool papers, expected mid-July 2027: 10 pages, and the category asks for exactly this (a mature tool with empirical evaluation). **Recommended.**
+   - (d) TOCE research article or dataset article: no length limit and no deadline, but review tokens are now required, and experience reports are not accepted.
+
+   Tradeoff: SIGCSE's audience against Koli's fit and length.
 6. **Sequencing with Paper 2.** The tool should pass benchmark v1 before it is run on any student work in Spring 2027. Options: (a) benchmark v1 by early February, and classroom audits start with the first assignment due after that; (b) classroom audits start after midterm. Tradeoff: Paper 2's sample size against having validated the tool first.
 7. **Benchmark release and double-blind review.** Release through an anonymized link during review, or after acceptance.
 8. **Install-test sandbox.** See `PROJECT.md` open decision 5.

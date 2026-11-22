@@ -41,7 +41,7 @@
 | 13 | The first agent-contrast plan (agents completing assignments under plain, logged and gaming instructions) | [source/agent-contrast-first-plan.md](source/agent-contrast-first-plan.md) | Found | Superseded by [synthetic-benchmark-spec.md](synthetic-benchmark-spec.md), which keeps its agent-built and adversarial cases. |
 | 14 | Northeastern 2026–2027 academic calendar, DHR guidance, federal regulations | URLs in `process-evidence-in-practice/README.md` | Found, checked 2026-11-22 | Spring 2027 runs January 13 to April 25; grades are due May 4, 2027. |
 | 15 | Spring 2027 course list | — | **Not found** | Needed for Paper 2's sample (about 200 students). |
-| 16 | CIP codes (Classification of Instructional Programs) for field profiles | External (NCES) | Being checked | Recorded in the outlines once verified. |
+| 16 | CIP codes (Classification of Instructional Programs) for field profiles | [NCES CIP](https://nces.ed.gov/ipeds/cipcode/) | Found, checked 2026-11-22 | CIP 2020 is "the most recent version"; no CIP 2030 announced. |
 
 ## What carries over from stem-project-review into the Frictional skill
 

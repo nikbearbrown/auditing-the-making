@@ -12,7 +12,7 @@
 **Why read it:** a claim with no evidence behind it does not go in either paper. This ledger is the check. When a result comes in or a source is confirmed, its row changes status here first.
 
 **What it shows:**
-- 9 background claims, mostly **have**.
+- 11 background claims, all **have** except one product-page check (L8).
 - 10 design claims, all **to collect**, because the skill does not exist yet.
 - 9 Paper 1 result claims and 11 Paper 2 result claims, all **to collect**.
 - 14 preprint claims reviewed:
@@ -31,13 +31,15 @@ Status values: **have** (evidence exists and is verified), **to collect** (the s
 |---|---|---|---|---|---|
 | L1 | Generative AI weakens the inference from a finished artifact to the process that produced it. | 1, 2 | The argument, plus evidence that artifacts can be produced without the process | have | Preprint §1–2; Weber-Wulff et al. 2023; Liang et al. 2023 |
 | L2 | Output-only AI-text detectors are unreliable and can be biased against some writers. | 1, 2 | Empirical detector studies | have | Weber-Wulff et al. 2023, doi:10.1007/s40979-023-00146-z; Liang et al. 2023, doi:10.1016/j.patter.2023.100779 |
-| L3 | Performance during instruction is not the same as durable learning. | 1, 2 | Learning-science literature | have (2011, 2013); to verify (1992) | Bjork and Bjork 1992, 2011; Bjork, Dunlosky and Kornell 2013 |
+| L3 | Performance during instruction is not the same as durable learning. | 1, 2 | Learning-science literature | have | Bjork and Bjork 1992, 2011; Bjork, Dunlosky and Kornell 2013 |
 | L4 | A report of evidence, weighed by the instructor, keeps the assessment judgment with the instructor; a verdict or score would take it away. | 1, 2 | Design argument; ethics literature | have | Preprint §5.3 ("the instructor as meta-model"); Slade and Prinsloo 2013 |
 | L5 | Inferring something about a learner from observed behavior is an evidence-centered design argument. | 1 | ECD literature | have | Mislevy, Steinberg and Almond 2003 |
 | L6 | Keystroke and process logs can separate authentic from non-authentic writing in controlled settings. | 1, 2 | Peer-reviewed studies | have | Jiang et al. 2024; Deane et al. 2025; Crossley et al. 2024 |
-| L7 | Autograders check correctness, not how the work developed. | 1 | Tool papers | to verify | Gradescope (Singh et al. 2017); Web-CAT (Edwards and Pérez-Quiñones 2008) |
+| L7 | Autograders check correctness, not how the work developed. | 1 | Tool papers | have | Singh et al. 2017, doi:10.1145/3051457.3051466; Edwards and Pérez-Quiñones 2008, doi:10.1145/1384271.1384371 |
 | L8 | Writing-process capture products document who produced text, not how a project developed. | 1 | Current product documentation | to verify | Grammarly Authorship and Turnitin Clarity product pages |
-| L9 | Student commit histories have been mined in computing education. | 1, 2 | Peer-reviewed studies | to verify | Mierle et al. 2005; Edwards et al. 2009; recent work |
+| L9 | Student commit histories have been mined in computing education. | 1, 2 | Peer-reviewed studies | have | Mierle et al. 2005; Edwards et al. 2009; Karakaš and Helić 2024; Song et al. 2026; Gedeon and Giacaman 2026 |
+| L10 | Detectors of LLM-generated student code exist and have known limits; they judge the artifact only. | 1 | Peer-reviewed studies | have | Hoq et al. 2024; Pan et al. 2024; Ye et al. 2026 |
+| L11 | LLM outputs vary across runs even at temperature 0, and LLM evaluators show biases, so consistency must be measured. | 1 | Peer-reviewed studies | have | Ouyang et al. 2025, doi:10.1145/3697010; Wang et al. 2024, doi:10.18653/v1/2024.acl-long.511; Jukiewicz 2024 |
 
 ## Design claims (Paper 1, relied on by Paper 2)
 
@@ -51,7 +53,7 @@ Status values: **have** (evidence exists and is verified), **to collect** (the s
 | D6 | Every report records the skill version and the model name and version. | 1, 2 | Schema; report header | to collect | Brief (report design) |
 | D7 | Install-test failures include the agent's full transcript, distinguishing documentation failures from agent-environment failures. | 1 | Benchmark cases A3, A4 | to collect | Brief (report design) |
 | D8 | Frictional runs locally and sends no data to Irreducibly Human. | 1, 2 | Source review (no outbound calls beyond the user's own clone); a network-isolated test; the README notice | to collect | Brief (reframing 3; README notice) |
-| D9 | Field profiles recommend dimension configurations by CIP code, as versioned files. | 1, 2 | Profile files; the CIP edition used | to collect; CIP edition to verify | Brief (supporting components) |
+| D9 | Field profiles recommend dimension configurations by CIP code, as versioned files. | 1, 2 | Profile files; the CIP edition used | to collect (CIP 2020 is the current edition, checked 2026-11-22) | Brief; [NCES CIP](https://nces.ed.gov/ipeds/cipcode/) |
 | D10 | Instructor feedback goes through a pre-filled link with enumerated values only; agents do not submit feedback. | 1, 2 | Feedback design; a test of the link contents | to collect | Brief (supporting components) |
 
 ## Paper 1 result claims
@@ -65,7 +67,7 @@ Status values: **have** (evidence exists and is verified), **to collect** (the s
 | P1-5 | An audit costs a measured amount of time and tokens per repository, by size and provider (RQ5) | 1 | Run logs; dated prices | to collect | Brief |
 | P1-6 | Expected findings were frozen before any audit ran. | 1 | Git tag, hashes, timestamps | to collect | Brief (benchmark rules) |
 | P1-7 | The benchmark is released as a public test and regression suite. | 1 | Public repository | to collect | Brief |
-| P1-8 | Detecting synthetic patterns does not guarantee detecting real ones (the analogue of the coupling effect in mutation testing). | 1, 2 | Mutation-testing literature; Paper 2 comparison | to verify (references) | DeMillo, Lipton and Sayward 1978; Offutt 1992; Just et al. 2014 |
+| P1-8 | Detecting synthetic patterns does not guarantee detecting real ones (the analogue of the coupling effect in mutation testing). | 1, 2 | Mutation-testing literature; Paper 2 comparison | have (references); Paper 2 comparison to collect | DeMillo, Lipton and Sayward 1978; Offutt 1992; Just et al. 2014 |
 | P1-9 | The audit's aim is to make gaming visible, not to be ungameable. | 1 | Design stance; RQ3 results | to collect | Brief ("what carries over") |
 
 ## Paper 2 result claims
