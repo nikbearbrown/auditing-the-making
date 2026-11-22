@@ -11,7 +11,7 @@
 - **Phase 1 (outline):** done and awaiting your sign-off. The outline, the benchmark specification and the claims ledger are below; Paper 2's outline and IRB notes are in the sibling folder.
 - **Phase 2 (drafting):** not started; out of scope until a later brief.
 
-**Names:** the audit skill's repository will be `frictional`. That GitHub name is currently held by the private Frictional book repository, so renaming it is your decision. The papers are named by their titles: this folder for Paper 1, and `../process-evidence-in-practice` for Paper 2.
+**Names:** the audit skill's repository will be `frictional`. The private Frictional book repository that held the name was renamed to `nikbearbrown/frictional-book` on 2026-11-22; the skill repository itself has not been created yet. The papers are named by their titles: this folder for Paper 1, and `../process-evidence-in-practice` for Paper 2.
 
 ## Files
 

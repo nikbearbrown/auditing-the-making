@@ -13,21 +13,21 @@
 
 **What it found:**
 - **The preprint is found** and converted to Markdown, verified word for word against the published page.
-- **No Frictional audit skill exists yet:** no repository, no dimension code, no Frictional report template. The GitHub name `nikbearbrown/frictional` is already taken by the private Frictional **book** repository (created 2026-06-05). The skill cannot use that name until the book repository is renamed. That is a human decision.
+- **No Frictional audit skill exists yet:** no repository, no dimension code, no Frictional report template. The private Frictional **book** repository used to hold the GitHub name `nikbearbrown/frictional`. On your decision it was renamed to `nikbearbrown/frictional-book` on 2026-11-22, so the name `frictional` is free for the skill.
 - **The closest working template is `stem-project-review`.** It has a skill, a standard-library Python CLI, a JSON schema, validate and render commands, and the same two-view report (`report.md` for people, `report.json` for agents). Per your direction, Frictional does everything stem-project-review does, and adds the Frictional process dimensions where it can find evidence for them. The second half of this file maps what carries over and lists the resulting dimension families.
 - **No student data was opened in this session.** One disclosure: before the outlining brief arrived, the session counted student folders and FRICTIONAL.md files in four course repositories, by file name only, without opening any file. Those counts appear in `process-evidence-in-practice/courses/README.md`. Remove them if you prefer.
 
 ## Naming
 
-- **Skill repository:** `frictional` (your decision, 2026-11-22). The GitHub name is occupied by the book repository; see open decision 1 below.
+- **Skill repository:** `frictional` (your decision, 2026-11-22). The book repository that held the name was renamed to `nikbearbrown/frictional-book` the same day. The old URL redirects to the book only until a repository named `frictional` is created; creating the skill repository ends that redirect. No local clone and no site checked (nikbearbrown.com, bearbrown.co, humanitarians.ai, brutalist.art, the book folder) linked to the old URL.
 - **Paper repositories:** named by paper title. Until titles are signed off, the folders use the working titles: `auditing-the-making` (Paper 1) and `process-evidence-in-practice` (Paper 2). Both are local git repositories; neither is on GitHub yet.
 
 ## Sources found
 
 | # | Source | Where | Status | Notes |
 |---|---|---|---|---|
-| 1 | The GLP preprint, *Measuring the Struggle: Process Friction Traces as Independent Evidence of Genuine Learning in the Age of Generative AI* | Published HTML: `bear-textbooks/books/nikbearbrown_com/public/notes/Frictional/frictional.html` (nikbearbrown.com commit 81e3f44, 2026-07-15). Markdown copy: [source/frictional-preprint.md](source/frictional-preprint.md) | Found | The Markdown was checked word for word against the HTML text; it differs only in formatting. An identical `frictional.html` is in the GitHub book repository `nikbearbrown/frictional`. |
-| 2 | Earlier variants of the preprint | `nikbearbrown/frictional` (GitHub, private): `measuring-the-struggle.html`, `glp-framework-genuine-learning-probability.html` | Found, not compared | Their titles match the preprint. They were not diffed against the current version. |
+| 1 | The GLP preprint, *Measuring the Struggle: Process Friction Traces as Independent Evidence of Genuine Learning in the Age of Generative AI* | Published HTML: `bear-textbooks/books/nikbearbrown_com/public/notes/Frictional/frictional.html` (nikbearbrown.com commit 81e3f44, 2026-07-15). Markdown copy: [source/frictional-preprint.md](source/frictional-preprint.md) | Found | The Markdown was checked word for word against the HTML text; it differs only in formatting. An identical `frictional.html` is in the GitHub book repository `nikbearbrown/frictional-book` (formerly `frictional`). |
+| 2 | Earlier variants of the preprint | `nikbearbrown/frictional-book` (GitHub, private; was `frictional`): `measuring-the-struggle.html`, `glp-framework-genuine-learning-probability.html` | Found, not compared | Their titles match the preprint. They were not diffed against the current version. |
 | 3 | Frictional skill repository | — | **Not found** | No audit skill, CLI or tests exist anywhere searched (CoWork, bear-textbooks/books, `~/.claude/skills`, the GitHub repository list). |
 | 4 | Dimension code | — | **Not found** | Nothing computes any GLP component or repository dimension. |
 | 5 | Frictional report templates | — | **Not found** | The closest is stem-project-review's report pair and schema (row 6). |
@@ -85,12 +85,7 @@ The outlining brief's install test is stem-project-review's outside-in workflow 
 
 ## Open decisions from Phase 0
 
-1. **The `frictional` name on GitHub.** The private book repository holds it. Options:
-   - (a) Rename the book repository (for example to `frictional-book`). GitHub redirects the old URL until a new repository takes the name, and the skill would take the name. Note: taking the name breaks the redirect.
-   - (b) Name the skill repository something else, such as `frictional-audit`.
-   - (c) Turn the book repository into the skill repository, moving the book to a new name.
-
-   This is your call; nothing has been renamed.
+1. **The `frictional` name on GitHub.** *Decided 2026-11-22:* option (a), rename the book repository. Done: `nikbearbrown/frictional-book`. The skill repository `frictional` has not been created yet.
 2. **Where shared documents live.** This folder holds `PROJECT.md`, `claims-ledger.md` and `source/` for both papers. Paper 2 links here. The alternative is a small parent repository for the Frictional program. Decide before either paper repository goes to GitHub.
 3. **The earlier variants of the preprint** (row 2). Should they be compared, or ignored as superseded?
 4. **Confidence on script findings.** Drop the field, or fix it at "deterministic".
