@@ -1,5 +1,30 @@
 # Auditing the Making (Frictional, Paper 1)
 
+## Abstract
+
+*Working abstract. No manuscript exists yet, so this describes what the paper sets out to do. It reports no results.*
+
+Generative AI can produce the artifacts that courses use as evidence of learning, so instructors need evidence of how a piece of work was made, not only of what it contains. This paper presents Frictional, a skill that a user's own AI agent runs locally against a folder or GitHub repository. It reports evidence about the artifact and about the process that produced it, and it gives findings, not scores or verdicts. We evaluate it on a synthetic benchmark of seeded issues, confound cases and manufactured process, with the expected findings frozen before any audit runs. We plan to report detection and false-positive rates for each dimension, whether confound cases receive the correct alternative explanations, consistency across repeated runs and model providers, and cost per repository. Synthetic evaluation establishes what the auditor can detect. It does not show that the patterns occur in real student work, or that the reports help instructors.
+
+## Where the draft is
+
+There is no draft yet. The closest document is the section-by-section outline, [paper1-outline.md](paper1-outline.md). The benchmark is specified in [synthetic-benchmark-spec.md](synthetic-benchmark-spec.md).
+
+## What needs to be done
+
+- Settle the 12 open decisions at the end of the outline, including the title, the benchmark scale and the venue.
+- Build the synthetic benchmark and freeze its expected findings.
+- Run the auditor on the benchmark for each research question.
+- Confirm the references still marked as unverified.
+- Write the paper.
+
+## How to contribute
+
+Read the [contributor guide](CONTRIBUTING.md). It lists each kind of contribution with where to start and what to send, the rules for this repo, how to submit, and how credit and authorship work.
+
+- **A quick contribution:** open an issue about one claim, source or decision. You don't need to review the whole paper.
+- **To become an author:** take on a component of the work, help write the paper, approve the final version and agree to be accountable for it. The guide explains each step.
+
 ## Executive summary
 
 **What this is:** the working repository for Paper 1 of the Frictional program. The working title is *Auditing the Making: An Agent-Run Tool for Evidence of How Student Work Was Made*. The paper evaluates the Frictional audit skill on a synthetic benchmark only, with no human subjects. The folder will be renamed to match the title you sign off on.
@@ -12,8 +37,6 @@
 - **Phase 2 (drafting):** not started; out of scope until a later brief.
 
 **Names:** the audit skill's repository will be `frictional`. The private Frictional book repository that held the name was renamed to `nikbearbrown/frictional-book` on 2026-11-22; the skill repository is [nikbearbrown/frictional](https://github.com/nikbearbrown/frictional). The papers are named by their titles: this folder for Paper 1, and `../process-evidence-in-practice` for Paper 2.
-
-**Want to help?** Read [CONTRIBUTING.md](CONTRIBUTING.md) for what the paper needs and how credit works.
 
 ## Files
 
