@@ -11,7 +11,9 @@
 - **Phase 1 (outline):** done and awaiting your sign-off. The outline, the benchmark specification and the claims ledger are below; Paper 2's outline and IRB notes are in the sibling folder.
 - **Phase 2 (drafting):** not started; out of scope until a later brief.
 
-**Names:** the audit skill's repository will be `frictional`. The private Frictional book repository that held the name was renamed to `nikbearbrown/frictional-book` on 2026-11-22; the skill repository itself has not been created yet. The papers are named by their titles: this folder for Paper 1, and `../process-evidence-in-practice` for Paper 2.
+**Names:** the audit skill's repository will be `frictional`. The private Frictional book repository that held the name was renamed to `nikbearbrown/frictional-book` on 2026-11-22; the skill repository is [nikbearbrown/frictional](https://github.com/nikbearbrown/frictional). The papers are named by their titles: this folder for Paper 1, and `../process-evidence-in-practice` for Paper 2.
+
+**Want to help?** Read [CONTRIBUTING.md](CONTRIBUTING.md) for what the paper needs and how credit works.
 
 ## Files
 
@@ -33,4 +35,4 @@ Paper 2 (the classroom study under IRB approval) is in `../process-evidence-in-p
 - No student data is opened, read or processed. Paper 1 uses synthetic data only.
 - Nothing is invented. Unconfirmed references are marked UNVERIFIED or "verifying". Venue facts carry the date they were checked.
 - You decide scope, venues, titles and claims. Each deliverable has blank sign-off fields for you.
-- Never put student data in this repository. Keep it private until you decide otherwise.
+- Never put student data in this repository.
