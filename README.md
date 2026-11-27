@@ -6,7 +6,9 @@
 
 **We're inviting collaborators.** Review one claim, check a source, or take on one of the tasks listed below. You don't need to review the whole paper to help. To join, follow [Getting started](CONTRIBUTING.md#getting-started) in the contributor guide.
 
-## Abstract
+[Current rough draft](paper/rough-draft.md) · [Critique review](critiq-output/auditing-the-making-review.md)
+
+## Historical abstract
 
 *Working abstract. No manuscript exists yet, so this describes what the paper sets out to do. It reports no results.*
 
@@ -14,7 +16,8 @@ Generative AI can produce the artifacts that courses use as evidence of learning
 
 ## Where the draft is
 
-There is no draft yet. The closest document is the section-by-section outline, [paper1-outline.md](paper1-outline.md). The benchmark is specified in [synthetic-benchmark-spec.md](synthetic-benchmark-spec.md).
+[Read the rough draft](paper/rough-draft.md) · [Read the Critique review](critiq-output/auditing-the-making-review.md). This is a working manuscript for author review, not a submission.
+The [earlier outline](paper1-outline.md) and [benchmark specification](synthetic-benchmark-spec.md) are design records; no study results are reported.
 
 ## What needs to be done
 
@@ -22,7 +25,7 @@ There is no draft yet. The closest document is the section-by-section outline, [
 - Build the synthetic benchmark and freeze its expected findings.
 - Run the auditor on the benchmark for each research question.
 - Confirm the references still marked as unverified.
-- Write the paper.
+- Review the rough manuscript and fill the evidence gaps when the benchmark is run.
 
 ## How to contribute
 
@@ -35,7 +38,7 @@ Start with [Getting started](CONTRIBUTING.md#getting-started) in the [contributo
 
 **What this is:** the working repository for Paper 1 of the Frictional program. The working title is *Auditing the Making: An Agent-Run Tool for Evidence of How Student Work Was Made*. The paper evaluates the Frictional audit skill on a synthetic benchmark only, with no human subjects. The folder will be renamed to match the title you sign off on.
 
-**Why read it:** this is Phase 1 of the outlining brief, delivered for sign-off. Nothing here is a draft of the paper, and no audit has been built or run.
+**Why read it:** this is Phase 1 of the outlining brief, delivered for sign-off. The historical outline predates the new rough manuscript. No benchmark results are reported.
 
 **Where it stands (2026-11-22):**
 - **Phase 0 (locate sources):** done; see [PROJECT.md](PROJECT.md). The preprint was found. No Frictional skill, dimension code or report template exists yet. stem-project-review is the template. Per your direction, the auditor does everything stem-project-review does, and adds the Frictional process dimensions wherever their evidence exists.
